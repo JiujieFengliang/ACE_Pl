@@ -1,0 +1,40 @@
+#define MANIFEST 24
+#define IDI_MAINICON 129
+#define tubiao 100
+#define IDR_MANIFEST1 1
+#define PM_ACE限制器 1000
+#define ACE进程限制选择框 1001
+#define 高性能电源计划选择框 1002
+#define 启动服务按钮 1003
+#define 卸载服务按钮 1004
+#define 配置文件恢复按钮 1005
+#define 进度条 1006
+#define 停止ACE系统服务选择框 1007
+#define 夜间模式选择框 1008
+#define 服务状态标签 1009
+#define IDC_组合框1 1010
+
+LANGUAGE 4,2
+
+IDI_MAINICON ICON DISCARDABLE "res/icon.ico"
+tubiao ICON DISCARDABLE "res/2.ico"
+
+IDR_MANIFEST1 MANIFEST "res/manifest.xml"
+
+PM_ACE限制器 DIALOGEX -4,-16,196,112
+CAPTION "PM_ACE限制器V1.4"
+FONT 9,"MS Sans Serif",0,0,0
+STYLE 0x10CA0840
+BEGIN
+  CONTROL "ACE进程限制",ACE进程限制选择框,"Button",0x50010003,105,24,87,12
+  CONTROL "锁定电源方案",高性能电源计划选择框,"Button",0x50010003,12,24,72,12
+  CONTROL "应用功能",启动服务按钮,"Button",0x50010000,12,60,84,18
+  CONTROL "停止功能",卸载服务按钮,"Button",0x50010000,99,60,87,18
+  CONTROL "配置文件恢复",配置文件恢复按钮,"Button",0x50010000,133,84,54,18
+  CONTROL "",进度条,"msctls_progress32",0x50000001,12,87,117,15
+  CONTROL "停止ACE系统服务",停止ACE系统服务选择框,"Button",0x50010003,105,42,81,12
+  CONTROL "夜间模式",夜间模式选择框,"Button",0x50010003,105,6,54,15
+  CONTROL "功能状态：",服务状态标签,"Static",0x50000000,12,9,87,9
+  CONTROL "",IDC_组合框1,"ComboBox",0x50010103,12,42,87,15
+END
+
